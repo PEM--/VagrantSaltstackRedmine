@@ -1,0 +1,4 @@
+# We run in masterless mode
+master: localhost
+# We use the local file directory
+file_client: local
