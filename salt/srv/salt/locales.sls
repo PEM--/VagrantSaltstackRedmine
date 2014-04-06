@@ -1,6 +1,6 @@
 include:
-  - import.apt.update
-  - import.apt.upgrade
+  - apt.update
+  - apt.upgrade
 language-pack-fr:
   pkg:
     - installed

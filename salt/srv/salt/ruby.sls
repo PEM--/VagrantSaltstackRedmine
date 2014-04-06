@@ -1,6 +1,6 @@
 include:
-  - import.apt.update
-  - import.apt.upgrade
+  - apt.update
+  - apt.upgrade
 
 {% set source = '/usr/local/src/' -%}
 {% set version = '1.9.3-p545' -%}
