@@ -2,3 +2,8 @@
 master: localhost
 # We use the local file directory
 file_client: local
+# We add some imported formulas to the default dirs
+file_roots:
+  base:
+    # Default dir
+    - /srv/salt

@@ -1,3 +1,6 @@
+include:
+  - import.apt.update
+  - import.apt.upgrade
 nginx:
   pkg:
     - installed

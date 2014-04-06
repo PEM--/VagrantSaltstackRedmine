@@ -2,3 +2,4 @@ base:
   '*':
     - locales
     - webserver
+    - ruby
