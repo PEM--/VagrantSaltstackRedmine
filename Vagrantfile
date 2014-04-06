@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Add port forwarding to access service deployed in the node
   config.vm.network "forwarded_port", host: 8080, guest: 80
+  config.vm.network "forwarded_port", host: 3000, guest: 3000
 
   # Synchronized folders
   config.vm.synced_folder "salt/www/", "/var/lib/www/"
