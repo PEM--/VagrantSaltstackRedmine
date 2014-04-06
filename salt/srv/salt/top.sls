@@ -1,6 +1,7 @@
 base:
   '*':
     - locales
-    - webserver
+    #- mysql
     - ruby
+    - webserver
     - gems
