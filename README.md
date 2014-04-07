@@ -22,4 +22,4 @@ Log files are exported using a shared folder `~/tmp`. Watch them with:
 tail -f ~/tmp/minion
 ```
 
-The current VM is available on your network at: http://192.168.50.40
+The current VM is available on your network at: http://192.168.50.10
