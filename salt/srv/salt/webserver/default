@@ -22,7 +22,7 @@ server {
 	index index.html index.htm;
   
   # Enable passenger
-  passenger_enabled on
+  passenger_enabled on;
 
 	# Make site accessible from http://localhost/
 	server_name localhost;

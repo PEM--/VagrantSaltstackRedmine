@@ -1,8 +1,9 @@
 Redmine installation with Vagrant and SaltStack
 ===============================================
-**Work in progress**
 
-/!\ : A bug in Saltstack prevents from creating grants to the redmine user. Use the mysql CLI manually logged:
+### Work in progress
+
+**/!\** : A bug in Saltstack prevents from creating grants to the redmine user. Use the MySQL CLI while being manually logged in the VM:
 ```sql
 GRANT ALL PRIVILEGES ON redmine.* TO 'redmine'@'localhost';
 ```
@@ -20,3 +21,5 @@ Log files are exported using a shared folder `~/tmp`. Watch them with:
 ```bash
 tail -f ~/tmp/minion
 ```
+
+The current VM is available on your network at: http://192.168.50.40

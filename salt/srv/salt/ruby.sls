@@ -1,7 +1,3 @@
-include:
-  - apt.update
-  - apt.upgrade
-
 {% set source = '/usr/local/src/' -%}
 {% set ruby_version = '1.9.3-p545' -%}
 {% set ruby_package = source + 'ruby-' + ruby_version + '.tar.bz2' -%}

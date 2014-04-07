@@ -1,6 +1,3 @@
-include:
-  - ruby
-
 # Step 0: Ensure old http server removal
 old_nginx:
   pkg.removed:

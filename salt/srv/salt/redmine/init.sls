@@ -1,8 +1,3 @@
-include:
-  - ruby
-  - gems
-  - database
-
 {% set source = '/usr/local/src/' -%}
 {% set redmine_version = '2.5.1' -%}
 {% set redmine_package = source + 'redmine-' + redmine_version + '.tar.gz' -%}

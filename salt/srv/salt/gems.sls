@@ -1,6 +1,3 @@
-include:
-  - ruby
-
 mysql2:
   pkg.installed:
     - names:
@@ -28,4 +25,3 @@ rmagick:
     - rdoc: False
     - require:
       - pkg: rmagick
-      

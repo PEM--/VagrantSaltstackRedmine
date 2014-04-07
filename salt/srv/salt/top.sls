@@ -5,12 +5,12 @@ base:
     # Simple Git CLI
     - git
     # Compiled Ruby
-    #- ruby
+    - ruby
     # Phusion's NGINX
     - webserver
     # Some gems: RMagick (with ImageMagick), Bundle
-    #- gems
+    - gems
     # MySQL
-    #- database
+    - database
     # Redmine
-    #- redmine
+    - redmine
