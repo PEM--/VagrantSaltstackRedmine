@@ -82,25 +82,25 @@ redmine-bundler:
       - file: redmine-config-file
 
 # Step 6: Generate a secret token (a session store)
-redmine-secret-token:
-  cmd.run:
-    - name: rake generate_secret_token
-    - cwd: {{ source }}redmine-{{ redmine_version }}
-    - require:
-      - cmd: redmine-bundler
+#redmine-secret-token:
+  #cmd.run:
+    #- name: rake generate_secret_token
+    #- cwd: {{ source }}redmine-{{ redmine_version }}
+    #- require:
+      #- cmd: redmine-bundler
 
 # Step 7: Database schema creation
-redmine-schema:
-  cmd.run:
-    - name: RAILS_ENV=production rake db:migrate
-    - cwd: {{ source }}redmine-{{ redmine_version }}
-    - require:
-      - cmd: redmine-secret-token
+#redmine-schema:
+  #cmd.run:
+    #- name: RAILS_ENV=production rake db:migrate
+    #- cwd: {{ source }}redmine-{{ redmine_version }}
+    #- require:
+      #- cmd: redmine-secret-token
 
 # Step8: Database default set
-redmine-default-set:
-  cmd.run:
-    - name: RAILS_ENV=production rake redmine:load_default_data
-    - cwd: {{ source }}redmine-{{ redmine_version }}
-    - require:
-      - cmd: redmine-schema
+#redmine-default-set:
+  #cmd.run:
+    #- name: RAILS_ENV=production rake redmine:load_default_data
+    #- cwd: {{ source }}redmine-{{ redmine_version }}
+    #- require:
+      #- cmd: redmine-schema

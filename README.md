@@ -2,6 +2,21 @@ Redmine installation with Vagrant and SaltStack
 ===============================================
 **Work in progress**
 
-* /!\ : A bug in Saltstack prevents from creating grants to the redmine user <br>
-  Use the mysql CLI manually logged:<br>
-  ```GRANT ALL PRIVILEGES ON redmine.* TO 'redmine'@'localhost';```
+/!\ : A bug in Saltstack prevents from creating grants to the redmine user. Use the mysql CLI manually logged:
+```sql
+GRANT ALL PRIVILEGES ON redmine.* TO 'redmine'@'localhost';
+```
+
+Some additional steps need to be manually performed as they are not indempotent:
+```bash
+vagrant ssh
+cd /usr/local/src/redmine-2.5.1
+sudo rake generate_secret_token
+sudo RAILS_ENV=production rake db:migrate
+sudo RAILS_ENV=production rake redmine:load_default_data
+```
+
+Log files are exported using a shared folder `~/tmp`. Watch them with:
+```bash
+tail -f ~/tmp/minion
+```
