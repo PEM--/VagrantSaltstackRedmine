@@ -1,16 +1,16 @@
 base:
   '*':
     # French locales
-    #- locales
+    - locales
     # Simple Git CLI
-    #- git
+    - git
     # Compiled Ruby
     - ruby
     # Phusion's NGINX
-    #- webserver
+    - webserver
     # Some gems: RMagick (with ImageMagick), Bundle
     - gems
     # MySQL
-    #- database
+    - database
     # Redmine
     - redmine
