@@ -6,11 +6,11 @@ base:
     - git
     # Compiled Ruby
     - ruby
-    # Phusion's NGINX
+    # BrightCove's NGINX
     - webserver
-    # Some gems: RMagick (with ImageMagick), Bundle
-    - gems
     # MySQL
     - database
+    # Some gems: RMagick (with ImageMagick), Bundle
+    - gems
     # Redmine
     - redmine

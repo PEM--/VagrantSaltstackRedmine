@@ -1,3 +1,2 @@
 language-pack-fr:
-  pkg:
-    - installed
+  pkg.installed

@@ -22,4 +22,6 @@ Log files are exported using a shared folder `~/tmp`. Watch them with:
 tail -f ~/tmp/minion
 ```
 
+> Consider using [colortail](http://pjek.se/projects/colortail/) for a better display.
+
 The current VM is available on your network at: http://192.168.50.10

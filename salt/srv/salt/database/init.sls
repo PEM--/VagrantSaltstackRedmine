@@ -9,12 +9,12 @@ database:
     - name: mysql
     - require:
       - file: /etc/mysql/my.cnf
+    - watch:
+      - file: /etc/mysql/my.cnf
   mysql_user:
     - present
     - name: 'root'
     - password: 'Redmine'
-    - require:
-      - service: database
 
 /etc/mysql/my.cnf:
   file.managed:
