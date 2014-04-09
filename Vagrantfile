@@ -5,9 +5,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Name of the node
   config.vm.box = "Redmine"
 
-  # Import a preinstalled Ubuntu Server 13.10
-  # TODO : use 64bits : config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box"
-  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box"
+  # Import a preinstalled Ubuntu Server 12.04 LTS
+  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box"
 
   # Configure VM as a real server available on the LAN
   config.vm.network "private_network", ip: "192.168.50.10"

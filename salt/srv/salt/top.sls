@@ -4,13 +4,13 @@ base:
     - locales
     # Simple Git CLI
     - git
-    # Compiled Ruby
-    - ruby
     # BrightCove's NGINX
+    #- ruby
+    # NGINX
     - webserver
     # MySQL
-    - database
+    #- database
     # Some gems: RMagick (with ImageMagick), Bundle
-    - gems
+    #- gems
     # Redmine
-    - redmine
+    #- redmine

@@ -1,9 +1,6 @@
 nginx:
-  pkgrepo.managed:
-    - ppa: nginx/stable
   pkg.latest:
     - name: nginx-extras
-    - refresh: True
   service.running:
     - require:
       - file: /etc/nginx/nginx.conf
